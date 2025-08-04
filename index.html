@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to HTML5</title>
+  <meta name="description" content="Learn the basics of HTML5, semantic tags, accessibility, and SEO for beginners.">
+  <meta name="keywords" content="HTML5, semantic tags, accessibility, SEO, beginner">
+  <meta name="author" content="Sandei Travolta">
+</head>
+<body>
+  <header>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#about" accesskey="a">About</a></li>
+        <li><a href="#features" accesskey="f">Features</a></li>
+        <li><a href="#contact" accesskey="c">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>Introduction to HTML5</h1>
+  </header>
+
+  <main>
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About HTML5</h2>
+      <p>
+        HTML5 is the latest evolution of the standard that defines HTML. It introduces new semantic elements, improves accessibility, and enhances SEO for web pages.
+      </p>
+    </section>
+
+    <section id="features" aria-labelledby="features-heading">
+      <h2 id="features-heading">Key Features</h2>
+      <ul>
+        <li><strong>Semantic Tags:</strong> Elements like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> provide meaning to your content.</li>
+        <li><strong>Accessibility:</strong> Proper use of tags and attributes helps screen readers and assistive technologies.</li>
+        <li><strong>SEO:</strong> Well-structured HTML improves search engine discoverability.</li>
+      </ul>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <form aria-label="Contact form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required aria-required="true">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required aria-required="true">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required aria-required="true"></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sandei Travolta. All rights reserved.</p>
+  </footer>
+</body>
